@@ -1,12 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import Item from "./components/item";
+import ListTweets from "./components/listTweets.js";
+import ListTrends from "./components/listTrends";
+import toFollowList from "./components/toFollowList";
+import Trend from "./components/trend";
+import Tweet from "./components/tweet";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<Item/>, document.getElementById("root"));
+//ReactDOM.render(<ListTweets/>, document.getElementById("root"));
+//ReactDOM.render(<ListTrends/>, document.getElementById("root"));
+//ReactDOM.render(<toFollowList/>, document.getElementById("root"));
+//ReactDOM.render(<Trend/>, document.getElementById("root"));
+//ReactDOM.render(<Tweet/>, document.getElementById("root"));
